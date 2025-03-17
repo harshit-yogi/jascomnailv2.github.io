@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="splash.js"></script>
+    <link rel="stylesheet" href="splash.css">
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo-text">Jascom</div>
+        <div class="logo-mustache">{ }</div>
+    </div>
+    <div class="signup-container">
+        <div class="signup-header">
+            <h1>SIGN UP</h1>
+            <p>SIGN UP TO CONTINUE</p>
+        </div>
+        
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">Name :</label>
+                <input type="text" id="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-Mail :</label>
+                <input type="email" id="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Create Password :</label>
+                <input type="password" id="password" required>
+                <small>minimum 6 characters</small>
+            </div>
+            
+            <button type="submit" class="next-btn" id="next-button">NEXT > ></button>
+        </form>
+    </div>
+    <script src="signupscript.js"></script>
+</body>
+</html>

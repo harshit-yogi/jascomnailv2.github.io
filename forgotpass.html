@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Recovery</title>
+    <link rel="stylesheet" href="forgot.css">
+    <script src="splash.js"></script>
+    <link rel="stylesheet" href="splash.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <div class="logo">
+                <span>Jascom</span>
+                <div class="mustache"></div>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <h1>FORGOT PASSWORD ?</h1>
+            
+            <form id="passwordRecoveryForm">
+                <div class="input-group">
+                    <label for="username">USERNAME :</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="security-section">
+                    <p>SECURITY QUESTION :-</p>
+                    
+                    <div class="input-group">
+                        <label for="city">What city were you born in ?</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="school">What was the name of your first school ?</label>
+                        <input type="text" id="school" name="school" required>
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <a href="login.html" class="btn btn-login">Login</a>
+                    <a href="newpassword.html" class="btn btn-new-password">Create new password</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="forgot.js"></script>
+</body>
+</html>

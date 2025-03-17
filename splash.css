@@ -1,0 +1,42 @@
+/* Splash animation styles */
+.splash {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    transform: translate(-50%, -50%);
+    animation: splash 2s ease-out forwards;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes splash {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.8;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+
+/* Transition effects for interactive elements */
+.smooth-transition {
+    transition: all 0.3s ease;
+}
+
+.btn, button, input, a {
+    transition: all 0.3s ease;
+}
+
+/* Page transitions */
+body {
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

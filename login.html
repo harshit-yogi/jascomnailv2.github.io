@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jascom Mail</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="splash.css">
+    <script src="loginscript.js" defer></script>
+    <script src="splash.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Help</a>
+        </div>
+    </nav>
+    
+    <div class="main-content">
+        <div class="title-container">
+            <h1 class="main-title">JASCOM MAIL</h1>
+        </div>
+        
+        <div class="login-card">
+            <h2 class="login-title">LOGIN TO YOUR ACCOUNT</h2>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username" class="form-label">Username :</label>
+                    <input type="text" id="username" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Password :</label>
+                    <input type="password" id="password" class="form-input" required>
+                </div>
+                
+                <button type="submit" class="login-button">LOGIN</button>
+            </form>
+            
+            <div class="login-footer">
+                <div class="signup-link">
+                    <span>Don't have an account?</span><br>
+                    <a href="signup.html" id="signupLink">Sign Up now !!</a>
+                </div>
+                <a href="forgotpass.html" class="forgot-password" id="forgotPassword">FORGOT PASSWORD</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal for signup and forgot password functionality -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+</body>
+</html>
